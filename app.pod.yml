@@ -5,7 +5,8 @@ metadata:
 spec:
   containers:
   - name: my-app
-    image: localhost:32000/app-flask:latest
+    image: app-flask:latest
+    imagePullPolicy: IfNotPresent
     livenessProbe:
       httpGet:
         path: /health
