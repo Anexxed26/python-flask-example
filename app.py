@@ -19,5 +19,9 @@ def count():
     contador += 1
     return str(contador)+'\n'
 
+@app.route("/version")
+def version_route():
+    return "2.0.0"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=porta, debug=True)
